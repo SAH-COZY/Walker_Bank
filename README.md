@@ -2,9 +2,9 @@
 Hi, I present to you this script that I just did today it is a Bank / ATM script in Rage UI V 1 which contains the following options:
 - Withdraw money
 - Deposit money
-- Transfer money (thanks to the player's id)
+- Transfer money (the player id)
 
-
+Script done in 2 hours
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 [FR]
