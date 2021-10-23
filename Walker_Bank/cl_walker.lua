@@ -3,7 +3,6 @@ Citizen.CreateThread(function()
 	while ESX == nil do
 		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 		Citizen.Wait(20)
-        player = ESX.GetPlayerData
 	end
 
 
@@ -58,7 +57,7 @@ function inputdeposer()
     end
 end
 local _src = source
-local getname = GetPlayerName(source)
+local getname = GetPlayerName(_src)
 RMenu.Add("Walker_Bank", "Menu_Bank", RageUI.CreateMenu("WBanking","Compte Bancaire de : "..getname))
 RMenu:Get("Walker_Bank", "Menu_Bank").Closed = function()end
 local positionbank = {
