@@ -56,9 +56,9 @@ function inputdeposer()
         end
     end
 end
-local _src = source
-local getname = GetPlayerName(_src)
-RMenu.Add("Walker_Bank", "Menu_Bank", RageUI.CreateMenu("WBanking","Compte Bancaire de : "..getname))
+
+local getname = GetPlayerName(PlayerId())
+RMenu.Add("Walker_Bank", "Menu_Bank", RageUI.CreateMenu("WBanking","Compte Bancaire : "..getname))
 RMenu:Get("Walker_Bank", "Menu_Bank").Closed = function()end
 local positionbank = {
     vector3(89.75, 2.35,  68.31),
